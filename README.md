@@ -1,6 +1,12 @@
-## introduction
 
-GNNExplainer is to explain the complex GCN model,
+![AppVeyor](https://img.shields.io/badge/build-success-brightgreen)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/gnnex)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/gnnex)
+![PyPI](https://img.shields.io/pypi/v/gnnex)
+![GitHub](https://img.shields.io/github/license/ifkid/gnnex)
+## Introduction
+
+gnnex is to explain the complex GCN model,
 it shows by drawing the most important edges in whole networks.
 
 Absolutely, there are many different  basic GCN models, so you can define your own
@@ -11,24 +17,25 @@ own GCN modeland generate the WEIGHT matrix.
 
 At last, draw the important edges according to WEIGHT matrix above.
 
-## installed 
->keras==2.2.4
+## Installed 
+>keras==2.3.1
 
->numpy==1.16.2
+>numpy==1.17.2
 
->pandas==0.24.2
+>pandas==0.25.3
 
->matplotlib==3.0.3
+>matplotlib==3.1.1
 
->scipy==1.2.1
+>scipy==1.3.2
 
 >networkx==2.2
 
 >seaborn==0.9.0
 
 ## Usage
-`pip install gnnex -i https://pypi.org/simple
-`
+
+pip install gnnex
+
 ## Basic Model
 
 You should define your own model according to your task to be resolved. By rewriting graph.py to define model and rewriting train.py to train your own model. 
