@@ -16,7 +16,7 @@ else:
     install_requires = []
 
 setup(name="gnnex",
-      version="1.0.1",
+      version="1.0.2",
       description="draw different colors to show edges' importance",
       long_description=long_description,
       long_description_content_type="text/markdown",
