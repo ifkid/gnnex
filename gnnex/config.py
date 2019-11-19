@@ -7,7 +7,7 @@
 class Config(object):
 
     def __init__(self, epochs, patience, base_model_path, hidden_dim, dataset, weights_path, adj_path, graph_path,
-                 heatmap_path,support):
+                 heatmap_path, support, batch_size):
         self.epochs = epochs
         self.patience = patience
         self.base_model_path = base_model_path
@@ -17,4 +17,5 @@ class Config(object):
         self.adj_path = adj_path
         self.graph_path = graph_path
         self.heatmap_path = heatmap_path
-        self.support=support
+        self.support = support
+        self.batch_size = batch_size

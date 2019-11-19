@@ -9,6 +9,7 @@ import numpy as np
 from scipy.sparse.linalg.eigen.arpack import eigsh, ArpackNoConvergence
 import random
 import matplotlib.pyplot as plt
+import os
 
 
 def encode_onehot(labels):
@@ -18,18 +19,18 @@ def encode_onehot(labels):
     return labels_onehot
 
 
-def load_data(path="data/cora/", dataset="cora"):
+def load_data(path, dataset, config):
     """Load citation network dataset (cora dataset only for now)"""
     print('Loading {} dataset...'.format(dataset))
 
-    idx_features_labels = np.genfromtxt("{}{}.content".format(path, dataset), dtype=np.dtype(str))
+    idx_features_labels = np.genfromtxt("{}{}.features".format(path, dataset), dtype=np.dtype(str))
     features = sp.csr_matrix(idx_features_labels[:, 1:-1], dtype=np.float32)
     labels = encode_onehot(idx_features_labels[:, -1])
 
     # build graph
     idx = np.array(idx_features_labels[:, 0], dtype=np.int32)
     idx_map = {j: i for i, j in enumerate(idx)}
-    edges_unordered = np.genfromtxt("{}{}_small.cites".format(path, dataset), dtype=np.int32)
+    edges_unordered = np.genfromtxt("{}{}.edges".format(path, dataset), dtype=np.int32)
     edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
                      dtype=np.int32).reshape(edges_unordered.shape)
     adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
@@ -40,7 +41,14 @@ def load_data(path="data/cora/", dataset="cora"):
 
     print('Dataset has {} nodes, {} edges, {} features.'.format(adj.shape[0], edges.shape[0], features.shape[1]))
 
-    return features, adj, labels
+    y_train, y_val, y_test, idx_train, idx_val, idx_test, train_mask = get_splits(labels)
+    features /= features.sum(1).reshape(-1, 1)  # normalization
+    graph = [features, adj]
+    if not os.path.exists(config.adj_path):
+        np.savetxt(config.adj_path, adj.A)
+    inputs = [graph, adj, features, y_train, y_val, y_test, idx_train, idx_val, idx_test, labels]
+
+    return features, adj, labels, inputs
 
 
 def normalize_adj(adj, symmetric=True):
@@ -68,9 +76,10 @@ def sample_mask(idx, l):
 def get_splits(y):
     num = [i for i in range(y.shape[0])]
     random.shuffle(num)
-    idx_train = num[:1500]
-    idx_val = num[1500:2200]
-    idx_test = num[2200:2700]
+    n = len(num)
+    idx_train = num[:int(n * 0.6)]
+    idx_val = num[int(n * 0.6):int(n * 0.8)]
+    idx_test = num[int(n * 0.8):]
     y_train = np.zeros(y.shape, dtype=np.int32)
     y_val = np.zeros(y.shape, dtype=np.int32)
     y_test = np.zeros(y.shape, dtype=np.int32)
@@ -160,9 +169,9 @@ def pltFig(n, x1, x2, x1_label, x2_label, xlabel, ylabel, title, path, dpi):
     plt.show()
 
 
-def pltFigSingle(n, x,x_label, xlabel, ylabel, title, path, dpi):
+def pltFigSingle(n, x, x_label, xlabel, ylabel, title, path, dpi):
     fig = plt.figure()
-    plt.plot(range(1, n + 1), x,label=x_label)
+    plt.plot(range(1, n + 1), x, label=x_label)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.title(title)

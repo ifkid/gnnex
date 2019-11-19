@@ -6,7 +6,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import seaborn as sns
-from gnnex.utils import calWeight, int2str, randomList
+from gnnex.utils import calWeight, int2str, randomList, subMatrix
 
 
 def showGraph(config, matrix, node, threshold):
@@ -32,7 +32,6 @@ def showGraph(config, matrix, node, threshold):
     small_color = "#1E90FF"
     node_color = "#3CB371"
     #
-    print(nodeN)
     if nodeN > 50:
         if nodeN > 100:
             a = 0.5
@@ -46,10 +45,21 @@ def showGraph(config, matrix, node, threshold):
     nx.draw_networkx_edges(G, pos, edgelist=emid, width=1, edge_color=mid_color)
     nx.draw_networkx_edges(G, pos, edgelist=esmall, width=1, alpha=a, edge_color=small_color)
     plt.axis("off")
-    plt.savefig(config.graph_path + "graph_node{}_{}".format(node, int2str(threshold)), dpi=1000)  # save as png
+    plt.savefig(config.graph_path + "{}_graph_node{}_{}".format(config.dataset, node, int2str(threshold)),
+                dpi=1000)  # save as png
+    plt.close()
 
 
 def showGraphHeat(config, matrix, node, threshold):
     heat_f = plt.figure(dpi=800, frameon=False)
     sns.heatmap(matrix, cmap="YlOrRd")
-    heat_f.savefig(config.heatmap_path + "heat_node{0}_{1}".format(node, int2str(threshold)))
+    heat_f.savefig(config.heatmap_path + "{}_heat_node{}_{}".format(config.dataset, node, int2str(threshold)))
+    plt.close()
+
+
+def draw(config, nodes, threshold):
+    print("========= Start to draw ========== ")
+    for node in nodes:
+        matrix, adj = subMatrix(config.adj_path, config.weights_path, node, threshold)
+        showGraph(config, matrix, node, threshold)
+        showGraphHeat(config, matrix, node, threshold)
