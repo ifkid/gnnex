@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T13:20:52.966Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="4cs6pTH4XmfalwYNHs9C" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-02T13:22:21.793Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="F4ElmF1xC_6Ni8zXsEl4" version="14.4.3" type="github">
   <diagram id="GOiW879iX_8V3-UJDKZr" name="模型整体流程图">
     <mxGraphModel dx="1186" dy="764" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -70,14 +70,14 @@
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-26" value="&lt;font color=&quot;#000000&quot;&gt;迭代触发&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="220" y="507" width="99" height="41" as="geometry" />
         </mxCell>
-        <mxCell id="chWhYCjPTjuPWZMP5Iyl-27" value="&lt;font color=&quot;#000000&quot;&gt;自动化配置&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-27" value="&lt;font color=&quot;#000000&quot;&gt;自动化上线&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="371" y="507" width="99" height="41" as="geometry" />
         </mxCell>
-        <mxCell id="chWhYCjPTjuPWZMP5Iyl-28" value="&lt;font color=&quot;#000000&quot;&gt;效果监控&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-28" value="&lt;font color=&quot;#000000&quot;&gt;回滚容灾&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="514" y="507" width="99" height="41" as="geometry" />
         </mxCell>
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-30" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;strokeColor=none;fillColor=#A9C4EB;" vertex="1" parent="1">
-          <mxGeometry x="21" y="29" width="133" height="492" as="geometry" />
+          <mxGeometry x="21" y="29" width="133" height="547" as="geometry" />
         </mxCell>
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-32" value="监控体系" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="123.5" y="187" width="24" height="20" as="geometry" />
@@ -89,7 +89,7 @@
           <mxGeometry x="27.5" y="224" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-35" value="模型监控" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="30" y="419" width="120" height="80" as="geometry" />
+          <mxGeometry x="23" y="478" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-36" value="模型文件" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="623" y="353" width="120" height="80" as="geometry" />
@@ -103,7 +103,7 @@
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-45" value="&lt;font style=&quot;font-size: 12px&quot;&gt;重新训练&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="481" y="446" width="59" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="chWhYCjPTjuPWZMP5Iyl-49" value="&lt;font color=&quot;#000000&quot;&gt;稳定性监控&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-49" value="&lt;font color=&quot;#000000&quot;&gt;模块可配置&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="657" y="507" width="99" height="41" as="geometry" />
         </mxCell>
       </root>
