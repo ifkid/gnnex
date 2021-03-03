@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-03T11:22:59.571Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="gSSbO1fA2ee6GGGL2ehO" version="14.4.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-03T11:24:03.138Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="itrJ_fyXA8PYEs-mv3bv" version="14.4.3" type="github" pages="2">
   <diagram id="GOiW879iX_8V3-UJDKZr" name="模型整体流程图">
     <mxGraphModel dx="1186" dy="764" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -177,11 +177,20 @@
         </mxCell>
         <mxCell id="68cpgst-C587SGlRVwlb-28" value="&lt;font color=&quot;#000000&quot;&gt;pmml替换&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontColor=#FFFFFF;" vertex="1" connectable="0" parent="68cpgst-C587SGlRVwlb-27">
           <mxGeometry x="0.0877" relative="1" as="geometry">
-            <mxPoint x="63.54" y="-14.94" as="offset" />
+            <mxPoint x="29.85" y="-16.189999999999998" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="68cpgst-C587SGlRVwlb-29" value="&lt;font style=&quot;font-size: 14px&quot;&gt;训练任务监控&lt;/font&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="24" y="369.5" width="124" height="80.5" as="geometry" />
+        </mxCell>
+        <mxCell id="68cpgst-C587SGlRVwlb-30" value="" style="endArrow=classic;html=1;fontSize=13;fontColor=#FFFFFF;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="chWhYCjPTjuPWZMP5Iyl-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="538" y="382" as="sourcePoint" />
+            <mxPoint x="981" y="527" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68cpgst-C587SGlRVwlb-31" value="&lt;font style=&quot;font-size: 16px&quot;&gt;结果&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;dashed=1;fontSize=13;fontColor=#FFFFFF;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="975" y="497" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
