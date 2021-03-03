@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-03T11:24:15.414Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="kd7bkobUbl4s_IzETR2G" version="14.4.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-03T11:28:17.209Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="qVrrOJs96pEtdYFZ6V_I" version="14.4.3" type="github" pages="2">
   <diagram id="GOiW879iX_8V3-UJDKZr" name="模型整体流程图">
-    <mxGraphModel dx="1186" dy="764" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1186" dy="764" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.2" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -84,7 +84,7 @@
             <mxPoint x="243.38785046728972" y="174" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="chWhYCjPTjuPWZMP5Iyl-80" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 12px&quot;&gt;实时特征计算&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="68cpgst-C587SGlRVwlb-7">
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-80" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 12px&quot;&gt;特征计算&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="68cpgst-C587SGlRVwlb-7">
           <mxGeometry x="45.35864485981308" y="37" width="150.45794392523365" height="49" as="geometry" />
         </mxCell>
         <mxCell id="68cpgst-C587SGlRVwlb-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;fontColor=#FFFFFF;" edge="1" parent="68cpgst-C587SGlRVwlb-7" source="chWhYCjPTjuPWZMP5Iyl-81">
@@ -92,7 +92,7 @@
             <mxPoint x="243.38785046728972" y="176" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="chWhYCjPTjuPWZMP5Iyl-81" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 12px&quot;&gt;离线特征查询&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="68cpgst-C587SGlRVwlb-7">
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-81" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 12px&quot;&gt;特征查询&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=14;fontColor=#FFFFFF;" vertex="1" parent="68cpgst-C587SGlRVwlb-7">
           <mxGeometry x="286.5338785046729" y="35" width="150.45794392523365" height="49" as="geometry" />
         </mxCell>
         <mxCell id="68cpgst-C587SGlRVwlb-9" value="" style="endArrow=classic;html=1;fontSize=14;fontColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="68cpgst-C587SGlRVwlb-6" target="chWhYCjPTjuPWZMP5Iyl-36">
@@ -189,8 +189,23 @@
             <mxPoint x="981" y="527" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="68cpgst-C587SGlRVwlb-31" value="&lt;font style=&quot;font-size: 16px&quot;&gt;结果&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;dashed=1;fontSize=13;fontColor=#FFFFFF;fillColor=#A9C4EB;" vertex="1" parent="1">
+        <mxCell id="68cpgst-C587SGlRVwlb-31" value="&lt;font style=&quot;font-size: 16px&quot;&gt;结果&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=13;fontColor=#FFFFFF;fillColor=#A9C4EB;" vertex="1" parent="1">
           <mxGeometry x="975" y="497" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="68cpgst-C587SGlRVwlb-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=30;exitPerimeter=0;fontSize=13;fontColor=#FFFFFF;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1053" y="250" as="targetPoint" />
+            <mxPoint x="1101" y="250" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68cpgst-C587SGlRVwlb-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.008;entryY=0.475;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;fontColor=#FFFFFF;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1057.5" y="267" as="sourcePoint" />
+            <mxPoint x="1109.96" y="267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68cpgst-C587SGlRVwlb-36" value="特征KV库" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=13;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1118" y="209" width="80" height="89" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
