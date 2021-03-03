@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-03T11:18:33.685Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="Ct0D_xT0z1wkiVMGvwhl" version="14.4.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-03T11:20:29.983Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="4P2EbeaiCEE92kwxha5s" version="14.4.3" type="github" pages="2">
   <diagram id="GOiW879iX_8V3-UJDKZr" name="模型整体流程图">
     <mxGraphModel dx="1186" dy="764" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -53,7 +53,7 @@
           <mxGeometry x="27.5" y="232" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-35" value="模型监控" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="23" y="478" width="120" height="80" as="geometry" />
+          <mxGeometry x="30" y="387" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-36" value="模型预测服务" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="743.5" y="485" width="155" height="84" as="geometry" />
@@ -140,7 +140,7 @@
         <mxCell id="68cpgst-C587SGlRVwlb-19" value="tesla离线训练" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="214" y="363" width="164" height="93" as="geometry" />
         </mxCell>
-        <mxCell id="68cpgst-C587SGlRVwlb-23" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;dashed=1;fontSize=13;fontColor=#FFFFFF;exitX=0.8;exitY=0.8;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.07;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="68cpgst-C587SGlRVwlb-19" target="chWhYCjPTjuPWZMP5Iyl-36">
+        <mxCell id="68cpgst-C587SGlRVwlb-23" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;dashed=1;fontSize=13;fontColor=#FFFFFF;exitX=0.8;exitY=0.8;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="68cpgst-C587SGlRVwlb-19" target="chWhYCjPTjuPWZMP5Iyl-27">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="538" y="338" as="sourcePoint" />
             <mxPoint x="588" y="288" as="targetPoint" />
@@ -149,6 +149,7 @@
               <mxPoint x="372" y="430" />
               <mxPoint x="538" y="430" />
               <mxPoint x="538" y="519" />
+              <mxPoint x="407" y="519" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -166,6 +167,12 @@
         <mxCell id="68cpgst-C587SGlRVwlb-26" value="&lt;font color=&quot;#000000&quot;&gt;重新训练&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontColor=#FFFFFF;" vertex="1" connectable="0" parent="68cpgst-C587SGlRVwlb-25">
           <mxGeometry x="0.1447" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68cpgst-C587SGlRVwlb-27" value="" style="endArrow=classic;html=1;dashed=1;fontSize=13;fontColor=#FFFFFF;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.106;entryY=0.679;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="chWhYCjPTjuPWZMP5Iyl-27" target="chWhYCjPTjuPWZMP5Iyl-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="538" y="600" as="sourcePoint" />
+            <mxPoint x="588" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
