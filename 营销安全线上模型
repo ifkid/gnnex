@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T13:26:57.535Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="8iX-hizN6W0U0HmD3eeW" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-03T02:02:25.213Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="AskF0Lkp3-B8azjLWQri" version="14.4.3" type="github">
   <diagram id="GOiW879iX_8V3-UJDKZr" name="模型整体流程图">
     <mxGraphModel dx="1186" dy="764" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,7 +37,7 @@
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-15" value="&lt;font color=&quot;#000000&quot;&gt;特征选择&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="223" y="239" width="99" height="41" as="geometry" />
         </mxCell>
-        <mxCell id="chWhYCjPTjuPWZMP5Iyl-17" value="" style="endArrow=classic;html=1;fontSize=16;fontColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="chWhYCjPTjuPWZMP5Iyl-15" target="chWhYCjPTjuPWZMP5Iyl-18">
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-17" value="" style="endArrow=classic;html=1;fontSize=16;fontColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="chWhYCjPTjuPWZMP5Iyl-15" target="chWhYCjPTjuPWZMP5Iyl-18">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="502" y="394" as="sourcePoint" />
             <mxPoint x="552" y="344" as="targetPoint" />
@@ -91,7 +91,12 @@
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-35" value="模型监控" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="23" y="478" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="chWhYCjPTjuPWZMP5Iyl-36" value="模型文件" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="chWhYCjPTjuPWZMP5Iyl-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-36" value="加载模型文件" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="608" y="350" width="155" height="84" as="geometry" />
         </mxCell>
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-42" value="" style="endArrow=classic;html=1;fontSize=16;fontColor=#FFFFFF;exitX=0.596;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="chWhYCjPTjuPWZMP5Iyl-19">
@@ -106,11 +111,11 @@
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-49" value="&lt;font color=&quot;#000000&quot;&gt;模块可配置&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="657" y="507" width="99" height="41" as="geometry" />
         </mxCell>
-        <mxCell id="chWhYCjPTjuPWZMP5Iyl-50" value="存" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-50" value="&lt;font style=&quot;font-size: 12px&quot;&gt;存特征&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="543.5" y="235" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-51" value="取" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="687" y="300" width="40" height="20" as="geometry" />
+          <mxGeometry x="681" y="321" width="74" height="20" as="geometry" />
         </mxCell>
         <mxCell id="chWhYCjPTjuPWZMP5Iyl-52" value="训练模型" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#A9C4EB;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="201" y="356" width="155" height="84" as="geometry" />
@@ -126,6 +131,15 @@
             <mxPoint x="387" y="619" as="sourcePoint" />
             <mxPoint x="437" y="569" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-60" value="&lt;font color=&quot;#ffffff&quot;&gt;结果&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#A9C4EB;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="702" y="649" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-62" value="实时预测" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="763" y="398" width="33" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="chWhYCjPTjuPWZMP5Iyl-64" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="371" y="394" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
